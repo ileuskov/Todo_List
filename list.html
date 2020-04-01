@@ -5,21 +5,30 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="list.css">
+
+    <!--- Font awesome link (icons) -->
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+   <!--- Google Fonts link-->
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <div id="container">
-        <h1>To-do List</h1>
-        <input type="text">
+        <h1>To-do List <i class="fas fa-plus-circle"></i></h1>
+        <input type="text" placeholder="Add a new Todo">
 
         <ul>
-            <li> <span>X</span> Learn HTML, CSS and Javascript</li>
-            <li> <span>X</span> Make at least 3 commits a day on Github</li>
-            <li> <span>X</span> Take part at a Hackathon</li>
+            <li> <span><i class="fas fa-trash-alt"></i></span> Learn HTML, CSS and Javascript</li>
+            <li> <span><i class="fas fa-trash-alt"></i></span> Become a Front End developer</li>
+            <li> <span><i class="fas fa-trash-alt"></i></span> Learn back end development</li>
+            <li> <span><i class="fas fa-trash-alt"></i></span> Become a full stack developer!</li>
         </ul>
     </div>
 
+
+    <!--- jQery CDN-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 

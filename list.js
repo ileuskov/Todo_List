@@ -13,13 +13,18 @@ $("ul").on("click", "span", function (event) {
     event.stopPropagation();
 });
 
-// Adding a new Todo by pressing the enter
+// Adding a new Todo by pressing enter
 $("input[type = 'text']").keypress(function (event) {
     if (event.which === 13) {
         // taking the text input for a new Todo from the user. Clearing the input afterwards
         var todoText = $(this).val();
         $(this).val("");
         // adding this text as a new li to the ul
-        $("ul").append("<li><span>X</span> " + todoText + "</li>");
+        $("ul").append("<li><span><i class='fas fa-trash-alt'></i></span> " + todoText + "</li>");
     }
 });
+
+//Toggling the form
+$(".fa-plus-circle").click(function(){
+    $("input[type = 'text']").fadeToggle();
+})

@@ -1,11 +1,85 @@
-#container{
-    width: 360px;
-    margin: 0 auto;
-    border: 2px solid gray;
+body{
+    font-family: 'Bitter', serif;
+    background: no-repeat center center fixed;
+    background-image: linear-gradient(to top, #cc2b5e, #bc2a6d, #a82e7a, #903483, #753a88);
+}
+
+h1{
+    background: #2890b9;
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+/* getting rid of the deafult bullet points*/
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+li{
+    background: white;
+    height: 40px;
+    line-height: 40px; /* so that line takes 100% of the li area. This way the text looks centered */
+    color: black;
+}
+
+li:nth-child(2n){
+    background: #F7F7F7;
+}
+
+span{
+    background-color: red;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    width: 0;
+    display: inline-block;
+    transition: 0.3s linear;
+    opacity: 0;
+}
+
+li:hover span{
+    width: 40px;
+    opacity: 1.0;
+}
+
+input{
+    font-size: 18px;
+    color: #2890b9;
+    background-color: #F7F7F7;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box; /* so that the input can have the same borders as the container (width alone will not change the margin) */
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+
+input:focus{
+    background: white;
+    border: 3px solid #2890b9;
+    outline: none; /* getting rid of the default "shining" effect of the border input*/
+}
+
+.fa-plus-circle{
+    float:right;
+    padding-top: 3px;
 }
 
 .completed{
-    color: gray;
+    color: green;
     text-decoration: line-through;
+}
+
+#container{
+    width: 360px;
+    margin: 100px auto;
+    background: #F7F7F7;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
