@@ -3,8 +3,8 @@ Hello there! This is a Todo List project.
 This small app can:
 
 1) Add new Todos via typing them into the input box and pressing enter
-2) Checking out Todos that are done by clicking on them. This add a strikethrough effect and a green color
-3) Deleting Todos that are not needed anymore
+2) Checking out Todos that are done by clicking on them. This adds a strikethrough effect and a green color to the chosen Todo.
+3) Deleting Todos that are not needed anymore by clicking on the trash can icon on the left of the Todo line.
 4) Toggling out the input box by clicking on the plus icon in the top right corner of the app box
 
 The app is made with:
